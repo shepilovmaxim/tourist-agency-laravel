@@ -1,0 +1,1 @@
+<p>DATA: {{ $data->name $data->description }}</p>
