@@ -70,7 +70,7 @@
     @auth
       <div class="error_container"></div>
       <div class="d-flex justify-content-center">
-        @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 3)
+        @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 21)
           <button class="btn btn-primary" id="edit_button">Edit</button>
           <button type="submit" class="btn btn-primary d-none m-1" id="save" id="submit_button">Save</button>
         @endif
@@ -78,7 +78,7 @@
     @endauth
   </form>
   @auth
-    @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 3)
+    @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 21)
       <form method="POST" action="{{route('tours.destroy', $tour->id)}}" class="d-flex justify-content-center">
         @csrf
         @method('DELETE')

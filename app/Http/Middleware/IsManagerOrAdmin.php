@@ -15,7 +15,7 @@ class IsManagerOrAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->role_id == 3 || auth()->user()->role_id == 1) {
+        if(auth()->user()->role_id == 21 || auth()->user()->role_id == 1) {
             return $next($request);
         }
         return redirect('/tours');

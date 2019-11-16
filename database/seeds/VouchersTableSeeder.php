@@ -14,24 +14,24 @@ class VouchersTableSeeder extends Seeder
     {
         $vouchers = [
             [
-                'user_id' => 3,
-                'status_id' => 2,
-                'tour_id' => 2
+                'user_id' => 21,
+                'status_id' => 11,
+                'tour_id' => 11
             ],
             [
-                'user_id' => 2,
-                'status_id' => 3,
+                'user_id' => 11,
+                'status_id' => 21,
                 'tour_id' => 1
             ],
             [
-                'user_id' => 2,
-                'status_id' => 3,
-                'tour_id' => 2
+                'user_id' => 11,
+                'status_id' => 21,
+                'tour_id' => 11
             ],
             [
-                'user_id' => 2,
+                'user_id' => 11,
                 'status_id' => 1,
-                'tour_id' => 3
+                'tour_id' => 21
             ]
         ];
 

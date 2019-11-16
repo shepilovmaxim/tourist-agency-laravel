@@ -23,12 +23,12 @@
           @if ($voucher->status->id == 1)
             <td class="set_status">
               Set status:
-              <form action="/admin/vouchers/{{$voucher->id}}/2" method="POST" style="display: inline-block">
+              <form action="/admin/vouchers/{{$voucher->id}}/11" method="POST" style="display: inline-block">
               @csrf
               @method('PUT')
                 <input type="submit" class="btn btn-primary" value="Paid">
               </form>
-              <form action="/admin/vouchers/{{$voucher->id}}/3" method="POST" style="display: inline-block">
+              <form action="/admin/vouchers/{{$voucher->id}}/21" method="POST" style="display: inline-block">
               @csrf 
               @method('PUT')
                 <input type="submit" class="btn btn-primary" value="Canceled">

@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         @auth
-                            @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 3)
+                            @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 21)
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/admin/vouchers') }}">
                                         Vouchers
